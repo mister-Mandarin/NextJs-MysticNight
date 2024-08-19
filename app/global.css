@@ -1,0 +1,81 @@
+:root {
+  --black: #262626;
+  --primary: #B39BFF;
+  --white: #fff;
+  --font-Stolzl-Book: 'Stolzl Book', sans-serif;
+  --font-Stolzl-Regular: 'Stolzl Regular', sans-serif;
+  --font-Stolzl-Bold: 'Stolzl Bold', sans-serif;
+  --font-Playfair: 'Playfair Display', serif;
+  --font-Prosto-One-Text: 'Prosto One Text', sans-serif;
+  --font-Prosto-One-Number: 'Prosto One Number', sans-serif;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Prosto One Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/prostoone/v19/OpNJno4VhNfK-RgpwWWxlilVWyXD.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+@font-face {
+  font-family: 'Prosto One Number';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/prostoone/v19/OpNJno4VhNfK-RgpwWWxli1VWw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Stolzl Book';
+  src: url('../fonts/Stolzl/Stolzl-Book.eot');
+  src: local('Stolzl Book'), local('Stolzl-Book'),
+    url('../fonts/Stolzl/Stolzl-Book.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stolzl/Stolzl-Book.woff2') format('woff2'),
+    url('../fonts/Stolzl/Stolzl-Book.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl Regular';
+  src: url('../fonts/Stolzl/Stolzl-Regular.eot');
+  src: local('Stolzl Regular'), local('Stolzl-Regular'),
+    url('../fonts/Stolzl/Stolzl-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stolzl/Stolzl-Regular.woff2') format('woff2'),
+    url('../fonts/Stolzl/Stolzl-Regular.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Stolzl Bold';
+  src: url('../fonts/Stolzl/Stolzl-Bold.eot');
+  src: local('Stolzl Bold'), local('Stolzl-Bold'),
+    url('../fonts/Stolzl/Stolzl-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Stolzl/Stolzl-Bold.woff2') format('woff2'),
+    url('../fonts/Stolzl/Stolzl-Bold.woff') format('woff'),
+    url('../fonts/Stolzl/Stolzl-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
