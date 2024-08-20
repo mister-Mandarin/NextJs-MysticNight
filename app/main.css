@@ -8,9 +8,8 @@
         url('https://alfa-zet.com/wp-content/uploads/2024/08/main-bg-min.jpg');
     background-color: var(--black);
     background-size: cover;
-    background-position: center;
+    background-position: center 14px;
     position: relative;
-    /* height: 100vh; */
 }
 
 .overlay-gradient {
@@ -18,7 +17,7 @@
     top: -5px;
     left: 0;
     width: 100%;
-    height: 300px;
+    height: 400px;
     z-index: 1;
     background: linear-gradient(180.00deg, rgb(10, 0, 20) 13.265%, rgba(61, 0, 122, 0) 100%);
 }
@@ -83,6 +82,8 @@
     font-weight: 400;
     margin: 0;
     line-height: 110px;
+    z-index: 2;
+    position: relative;
 }
 
 .title-gradient {
@@ -169,54 +170,38 @@
 .main_location {
     font-family: var(--font-Stolzl-Regular);
     color: var(--white);
-    font-size: clamp(14px, 2vw, 24px);
+    font-size: clamp(12px, 2vw, 24px);
     line-height: 140%;
     padding-bottom: 50px;
 }
 
-@media screen and (max-width: 768px) {
-    .main_event-title {
-        line-height: normal;
-    }
-
-}
-
-@media screen and (max-width: 550px) {
-    .main_top {
-        flex-wrap: wrap;
-    }
-
-    .date {
-        order: -1;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .time {
-        width: 50%;
-    }
-
-    .main_registration-button {
-        padding: 10px;
-    }
-}
-
 .speakers {
     position: relative;
+    padding: 0 5px;
+}
+
+.speakers__title {
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0px 4px 30px var(--primary-shadow);
+}
+
+.speakers__list {
+    text-align: center;
 }
 
 .speaker {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: clamp(18px, 2vw, 40px);
     margin-bottom: clamp(30px, 5vw, 55px);
 }
 
 .speaker img {
-    max-width: clamp(160px, 20vw, 260px);
-    padding: clamp(8px, 2vw, 14px);
+    max-width: clamp(110px, 20vw, 260px);
+    padding: clamp(4px, 1vw, 14px);
     border-radius: 50%;
-    box-shadow: 0px 4px 30px 0px rgb(228, 174, 255);
+    box-shadow: 0px 0px 14px 0px var(--primary-shadow);
     background: rgba(217, 217, 217, 0.01);
 }
 
@@ -231,12 +216,34 @@
     font-family: var(--font-Stolzl-Bold);
     text-transform: uppercase;
     color: var(--primary);
-    font-size: clamp(16px, 2vw, 30px);
-    line-height: 140%;
+    font-size: clamp(14px, 2vw, 30px);
+    margin: 0 0 10px 0;
 }
 
 .speaker__description {
     font-family: var(--font-Stolzl-Regular);
-    font-size: clamp(14px, 2vw, 24px);
+    font-size: clamp(12px, 2vw, 24px);
     line-height: 140%;
+}
+
+.speakers__footer {
+    font-family: var(--font-Stolzl-Regular);
+    color: var(--white);
+    font-size: clamp(12px, 2vw, 24px);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.speakers__bgLogo {
+    background-image: url('/img/bg-logo.png');
+    background-size: cover;
+    background-position: center;
+    height: clamp(415px, 10vw, 500px);
+    width: clamp(415px, 10vw, 500px);
+    
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    opacity: 5%;
 }

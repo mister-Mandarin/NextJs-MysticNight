@@ -1,0 +1,35 @@
+@media screen and (max-width: 768px) {
+    .main_event-title {
+        line-height: normal;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    .main_top {
+        flex-wrap: wrap;
+    }
+
+    .date {
+        order: -1;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .time {
+        width: 50%;
+    }
+
+    .main_registration-button {
+        padding: 10px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .speakers__bgLogo {
+        height: 100vw;
+        width: 100vw;
+
+    }
+}

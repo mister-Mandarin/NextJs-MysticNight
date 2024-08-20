@@ -1,6 +1,7 @@
 :root {
   --black: #262626;
   --primary: #B39BFF;
+  --primary-shadow: #E4AEFF;
   --white: #fff;
   --font-Stolzl-Book: 'Stolzl Book', sans-serif;
   --font-Stolzl-Regular: 'Stolzl Regular', sans-serif;
@@ -82,4 +83,9 @@ body {
 
 p {
   margin: 0;
+}
+
+footer {
+  position: relative;
+  z-index: 2;
 }
