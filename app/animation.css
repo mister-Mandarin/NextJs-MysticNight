@@ -1,0 +1,145 @@
+.animation-button {
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.animation-button:before {
+    content: "";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 100%;
+    width: 3em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    -webkit-transform: skewX(-45deg) translateX(0);
+    transform: skewX(-45deg) translateX(0);
+    -webkit-transition: none;
+    transition: none;
+    -webkit-animation: moving 3s ease-in-out infinite;
+    -moz-animation: moving 3s ease-in-out infinite;
+    -ms-animation: moving 3s ease-in-out infinite;
+    -o-animation: moving 3s ease-in-out infinite;
+    animation: moving 3s ease-in-out infinite;
+}
+
+@keyframes moving {
+    30% {
+        webkit-transform: skewX(-45deg) translateX(33.5em);
+        transform: skewX(-45deg) translateX(33.5em);
+    }
+
+    100% {
+        webkit-transform: skewX(-45deg) translateX(33.5em);
+        transform: skewX(-45deg) translateX(33.5em);
+    }
+}
+
+/* Облако справа */
+/* .cloud-left {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: -35%;
+    mix-blend-mode: plus-lighter;
+    width: 1000px;
+    height: 1000px;
+
+    object-fit: cover;
+
+
+    background: url('/img/smoke.png') no-repeat;
+    background-size: cover;
+    transform: rotate(-6.57deg);
+    animation: cloudMoveLeft 30s infinite ease-in-out;
+} */
+
+.cloud-left {
+    position: fixed;
+    z-index: 2;
+    top: -25vh;
+    left: -30vw;
+    mix-blend-mode: plus-lighter;
+    width: 1100px;
+    height: 1100px;
+
+    object-fit: cover;
+    
+    background: url('/img/smoke.png') no-repeat;
+    background-size: cover;
+    transform: rotate(-6.57deg);
+    animation: cloudMoveLeft 30s infinite ease-in-out;
+}
+
+.cloud-right {
+    position: fixed;
+    z-index: 2;
+
+    mix-blend-mode: plus-lighter;
+    width: 1000px;
+    height: 1000px;
+
+    top: -25vh;
+    right: -30vw;
+
+    background: url('/img/smoke.png') no-repeat;
+    background-size: cover;
+    transform: rotate(-155.76deg);
+    animation: cloudMoveRight 40s infinite ease-in-out;
+}
+
+@keyframes cloudMoveLeft {
+    0% {
+        transform: rotate(-6.57deg) translate(0px, 0px) scale(1);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: rotate(-8deg) translate(15px, -15px) scale(1.05);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: rotate(-10deg) translate(20px, -20px) scale(1.1);
+        opacity: 0.9;
+    }
+
+    75% {
+        transform: rotate(-8deg) translate(15px, -15px) scale(1.08);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: rotate(-6.57deg) translate(0px, 0px) scale(1);
+        opacity: 0.5;
+    }
+}
+
+@keyframes cloudMoveRight {
+    0% {
+        transform: rotate(-155.76deg) translate(0px, 0px) scale(1);
+        opacity: 0.6;
+    }
+
+    25% {
+        transform: rotate(-157deg) translate(15px, 15px) scale(1.1);
+        opacity: 0.9;
+    }
+
+    50% {
+        transform: rotate(-156.76deg) translate(-35px, 35px) scale(1.2);
+        opacity: 1;
+    }
+
+    75% {
+        transform: rotate(-156.76deg) translate(-10px, 10px) scale(1.05);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: rotate(-155.76deg) translate(0px, 0px) scale(1);
+        opacity: 0.6;
+    }
+}

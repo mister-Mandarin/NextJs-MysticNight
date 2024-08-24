@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mystic Night</title>
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="animation.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="adaptiv.css">
 </head>
 
 <body>
     <div class="wrapper">
+
+        <div class="cloud-right"></div>
+        <div class="cloud-left"></div>
+
         <section class="main-background">
             <div class="overlay-gradient"></div>
             <div class="content">
@@ -34,7 +39,11 @@
                     <h1 class="main_event-title">MYSTIC NIGHT</h1>
                     <div class="main_description">ВЕЧЕР МАССАЖНЫХ И ТАНТРИЧЕСКИХ ПРАКТИК</div>
                 </div>
-                <button href="#" class="main_registration-button">ЗАПИСЬ <span>Телеграм @Alfa_zet_afisha</span></button>
+                <a href="https://t.me/AlfaZetAfisha" target="_blank">
+                    <button class="main_registration-button animation-button">ЗАПИСЬ <span>Телеграм
+                            @Alfa_zet_afisha</span>
+                    </button>
+                </a>
                 <div class="main_location">
                     Центр оздоровительных практик &laquo;Альфа-Зет&raquo;<br />
                     г. Москва, м. Достоевская, 3-й Самотечный пер., 11с1 [3&nbsp;этаж]
@@ -99,27 +108,108 @@
                     и&nbsp;позволит тебе <b>почувствовать мир по&nbsp;-&nbsp;новому.</b></p>
                 <p>Встречай рассвет чувствительности, когда каждый шёпот станет песней, а&nbsp;близость обретет новую
                     глубину.</p>
-                <p class="price__subtitle"><b>ТЕБЯ ЖДЕТ ЭКСТАЗ, ПРОБУЖДЕНИЕ ВИТАЛЬНОСТИ, ЛЕГКОСТЬ, ГАРМОНИЯ
-                        И&nbsp;ПОЛНОЕ
-                        УДОВЛЕТВОРЕНИЕ.</b></p>
+                <p class="price__subtitle"><b>ТЕБЯ ЖДЁТ ЭКСТАЗ, ПРОБУЖДЕНИЕ ВИТАЛЬНОСТИ, ЛЕГКОСТЬ, ГАРМОНИЯ
+                        И&nbsp;ПОЛНОЕ УДОВЛЕТВОРЕНИЕ.</b></p>
             </article>
 
             <section class="pricing">
                 <h3 class="pricing__title">Стоимость</h3>
-                <ul class="pricing__list">
-                    <li>
-                        <span class="">3.000 ₽</span>до 12 августа
-                    </li>
-                    <li>
-                        <span class="">4.000 ₽</span>до 16 августа
-                    </li>
-                    <li>
-                        <span class="">5.000 ₽</span>при оплате на месте
-                    </li>
-                </ul>
-                <p class="discount">Для пар: скидка - по 1000₽ каждому!</p>
+                <div class="pricing__list">
+                    <div class="pricing__data">
+                        <p class="pricing__description">
+                            <span class="pricing__cost">3.000 ₽</span>до 12 августа
+                        </p>
+                        <p class="pricing__description">
+                            <span class="pricing__cost">4.000 ₽</span>до 16 августа
+                        </p>
+                        <p class="pricing__description">
+                            <span class="pricing__cost">5.000 ₽</span>при оплате на месте
+                        </p>
+                    </div>
+                    <hr />
+                    <div class="discount">
+                        Для пар:
+                        <div class="pricing__cost">скидка&nbsp;&mdash; по&nbsp;1000 ₽ каждому!</div>
+                    </div>
+                </div>
             </section>
+            <div class="speakers__bgLogo"></div>
         </section>
+
+        <section class="program">
+            <div class="overlay-gradient"></div>
+            <h2 class="main_event-title speakers__title">программа</h2>
+
+            <article class="program__event">
+                <h3 class="program__event-title"><b>Sound Healing &amp;&nbsp;GONG MEDITATION</b></h3>
+                <p class="program__event-description">
+                    Вибрации гонга погружают в&nbsp;состояние покоя,
+                    его звучание проникает в&nbsp;глубины подсознания и&nbsp;дарит многогранный опыт. Тело получает
+                    виброакустический массаж, активируются метаболические процессы, идёт воздействие на&nbsp;эндокринную
+                    и&nbsp;нервную системы
+                </p>
+            </article>
+
+            <article class="program__event">
+                <h3 class="program__event-title">ПАРНАЯ НЬЯСА <b>KUNDALINI YOgA</b></h3>
+                <p class="program__event-description">
+                    Через тактильные ощущения мы&nbsp;развиваем сердечный центр после чего делаем Крийи Венеры
+                    и&nbsp;парную медитацию
+                </p>
+            </article>
+
+            <article class="program__event">
+                <h3 class="program__event-title">ПАРНАЯ МАССАЖНАЯ ПРАКТИКА <b>4elements</b></h3>
+                <p class="program__event-description">
+                    Парная массажная практика поможет вернуться вам к&nbsp;себе и&nbsp;уделить внимание своему партнеру
+                </p>
+            </article>
+
+            <article class="program__event">
+                <h3 class="program__event-title"><b>TANTRIC&nbsp;GROUP MASSAGE</b></h3>
+                <p class="program__event-description">
+                    Динамическая медитациия вдвоём, где делается акцент на&nbsp;интимности, близости, единении
+                    партнёров: на&nbsp;время массажа пара стремится объединиться в&nbsp;единое целое, как&nbsp;бы являя
+                    собою единство Мужского и&nbsp;Женского во&nbsp;Вселенной
+                </p>
+            </article>
+
+            <article class="program__event">
+                <h3 class="program__event-title">L&nbsp;E&nbsp;E&nbsp;L&nbsp;A <b>&laquo;СКАЗКО-ТЕРАПИЯ&raquo;</b></h3>
+                <p class="program__event-description">
+                    Это формат Игрового взаимодействия между людьми через анализ сюжетов повествования
+                </p>
+            </article>
+
+            <article class="program__event">
+                <h3 class="program__event-title"><b>ESTATIC&nbsp;DANCE TIME</b></h3>
+                <p class="program__event-description">
+                    Это форма танца, в&nbsp;которой танцоры подчиняются ритму и&nbsp;свободно двигаются под музыку. Это
+                    приводит к&nbsp;трансу и&nbsp;ощущению экстаза, помогает людям справиться со&nbsp;стрессом
+                    и&nbsp;обрести безмятежность
+                </p>
+            </article>
+
+            <article class="program__event">
+                <h3 class="program__event-title"><b>SOUND HEALING</b> ПОЮЩИЕ ЧАШИ</h3>
+                <p class="program__event-description">
+                    Снимают болевой синдром, способствует достижению спокойствия, гармонизирует все энергетические
+                    центры организма
+                </p>
+            </article>
+
+            <article class="program__event">
+                <h3 class="program__event-title"><b>SADHANA by&nbsp;Yogi Bhadjan</b></h3>
+                <p class="program__event-description">
+                    Для души мы&nbsp;читаем текст ДжапДжи Сахиб, возвышаясь и&nbsp;пробуждаясь. Затем мы&nbsp;выполняем
+                    крийю,&nbsp;&mdash; серию упражнений, которые стимулируют идеальное функционирование физического
+                    тела, а&nbsp;после выполняем специальные глубокие медитации, которые настраивают&nbsp;ум.
+                    Её&nbsp;проведёт основатель традиции Кундалини Йоги на&nbsp;Западе&nbsp;&mdash; Йоги Бхаджан
+                    и&nbsp;Женского во&nbsp;Вселенной
+                </p>
+            </article>
+        </section>
+
     </div>
 
 </body>

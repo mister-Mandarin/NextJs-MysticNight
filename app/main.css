@@ -1,5 +1,7 @@
 .wrapper {
-    background: linear-gradient(45deg, #3b2e50, #100921);
+    background: linear-gradient(45deg, #262626, #100921);
+    position: relative;
+    overflow:hidden;
 }
 
 .main-background {
@@ -119,48 +121,10 @@
 
     transform-origin: center;
     transition: 0.5s ease-in-out;
-
-    /* для анимации */
-    position: relative;
-    overflow: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
 }
 
 .main_registration-button:hover {
     transform: scale(1.1);
-}
-
-.main_registration-button:before {
-    content: "";
-    background-color: rgba(255, 255, 255, 0.5);
-    height: 100%;
-    width: 3em;
-    display: block;
-    position: absolute;
-    top: 0;
-    left: -4.5em;
-    -webkit-transform: skewX(-45deg) translateX(0);
-    transform: skewX(-45deg) translateX(0);
-    -webkit-transition: none;
-    transition: none;
-    -webkit-animation: moving 3s ease-in-out infinite;
-    -moz-animation: moving 3s ease-in-out infinite;
-    -ms-animation: moving 3s ease-in-out infinite;
-    -o-animation: moving 3s ease-in-out infinite;
-    animation: moving 3s ease-in-out infinite;
-}
-
-@keyframes moving {
-    30% {
-        webkit-transform: skewX(-45deg) translateX(33.5em);
-        transform: skewX(-45deg) translateX(33.5em);
-    }
-
-    100% {
-        webkit-transform: skewX(-45deg) translateX(33.5em);
-        transform: skewX(-45deg) translateX(33.5em);
-    }
 }
 
 .main_registration-button span {
@@ -252,7 +216,7 @@
     position: relative;
     text-align: center;
     color: var(--white);
-    padding: 0 25px;
+    padding: 0 clamp(10px, 2vw, 25px);
 }
 
 .price-overlay-gradient {
@@ -277,6 +241,7 @@
     position: relative;
     z-index: 2;
     margin-bottom: 30px;
+    padding: 0 0 clamp(0px, 2vw, 20px);
 }
 
 .price__description>p {
@@ -294,6 +259,10 @@
     font-family: var(--font-Stolzl-Regular);
     border: 1px solid var(--primary);
     border-radius: 8px;
+    max-width: 400px;
+    margin: 0 auto 50px;
+    position: relative;
+    z-index: 2;
 }
 
 .pricing__title {
@@ -308,11 +277,66 @@
 }
 
 .pricing__list {
-    margin: 10px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+
+    font-family: var(--font-Stolzl-Regular);
+    font-size: clamp(12px, 2vw, 24px);
+    line-height: 140%;
+    color: var(--primary);
+    text-align: center;
 }
 
-.pricing__list>li>span {
-    font-size: clamp(20px, 2vw, 40px);;
-    margin-bottom: 10px;
+.pricing__data {
+    display: grid;
+    gap: 20px;
+    justify-items: start;
+    justify-content: center;
+}
+
+.pricing__description {
+    display: flex;
+}
+
+.pricing__list>hr {
+    color: var(--primary);
+    background: var(--primary);
+    height: 1px;
+    border: none;
+    margin: 0;
+    width: 100%;
+}
+
+.pricing__cost {
+    font-size: clamp(20px, 2vw, 40px);
+    color: var(--white);
+    margin: 0 15px;
+}
+
+.discount>.pricing__cost {
+    margin: 10px 0 0;
+}
+
+.program {
+    color: var(--white);
+    font-family: var(--font-Stolzl-Book);
+    font-size: clamp(12px, 2vw, 24px);
+    line-height: 140%;
+    text-align: center;
+    padding: 0 20px;
+    
+    padding-bottom: 50px;
+}
+
+.program__event {
+    margin-bottom: 40px;
+}
+
+.program__event-title {
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: clamp(14px, 2vw, 30px);
+    margin-bottom: 15px;
 }

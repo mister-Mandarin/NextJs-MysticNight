@@ -3,6 +3,14 @@
         line-height: normal;
     }
 
+    .cloud-left {
+        left: -75vw;
+    }
+
+    .cloud-right {
+        right: -75vw;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -24,12 +32,36 @@
         padding: 10px;
     }
 
+
+    .cloud-left {
+        left: -110vw;
+    }
+
+    .cloud-right {
+        right: -110vw;
+    }
+
 }
 
 @media screen and (max-width: 420px) {
     .speakers__bgLogo {
         height: 100vw;
         width: 100vw;
+    }
 
+    .cloud-left {
+        width: 900px;
+        height: 900px;
+        top: -20vh;
+    }
+
+    .cloud-left {
+        left: -115vw;
+    }
+
+    .cloud-right {
+        width: 900px;
+        height: 900px;
+        right: -130vw;
     }
 }
