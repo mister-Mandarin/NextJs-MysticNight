@@ -1,7 +1,7 @@
 .wrapper {
     background: linear-gradient(45deg, #262626, #100921);
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .main-background {
@@ -199,7 +199,9 @@
 }
 
 .speakers__bgLogo {
-    background-image: url('/img/bg-logo.png');
+    background-image:
+        url('/img/bg-logo.png'),
+        url(https://alfa-zet.com/wp-content/uploads/2024/08/bg-logo.png);
     background-size: cover;
     background-position: center;
     height: clamp(415px, 10vw, 500px);
@@ -326,7 +328,7 @@
     line-height: 140%;
     text-align: center;
     padding: 0 20px;
-    
+
     padding-bottom: 50px;
 }
 

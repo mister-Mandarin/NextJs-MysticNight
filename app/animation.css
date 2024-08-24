@@ -37,25 +37,6 @@
     }
 }
 
-/* Облако справа */
-/* .cloud-left {
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: -35%;
-    mix-blend-mode: plus-lighter;
-    width: 1000px;
-    height: 1000px;
-
-    object-fit: cover;
-
-
-    background: url('/img/smoke.png') no-repeat;
-    background-size: cover;
-    transform: rotate(-6.57deg);
-    animation: cloudMoveLeft 30s infinite ease-in-out;
-} */
-
 .cloud-left {
     position: fixed;
     z-index: 2;
@@ -66,8 +47,10 @@
     height: 1100px;
 
     object-fit: cover;
-    
-    background: url('/img/smoke.png') no-repeat;
+
+    background:
+        url('/img/smoke.png'),
+        url(https://alfa-zet.com/wp-content/uploads/2024/08/smoke.png) no-repeat;
     background-size: cover;
     transform: rotate(-6.57deg);
     animation: cloudMoveLeft 30s infinite ease-in-out;
@@ -84,7 +67,9 @@
     top: -25vh;
     right: -30vw;
 
-    background: url('/img/smoke.png') no-repeat;
+    background:
+        url('/img/smoke.png'),
+        url(https://alfa-zet.com/wp-content/uploads/2024/08/smoke.png) no-repeat;
     background-size: cover;
     transform: rotate(-155.76deg);
     animation: cloudMoveRight 40s infinite ease-in-out;
