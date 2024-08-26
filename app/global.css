@@ -13,10 +13,11 @@
 
 @font-face {
   font-family: 'Playfair Display';
-  src: url(https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap);
-  font-optical-sizing: auto;
-  font-weight: 400;
   font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/playfairdisplay/v37/nuFvD-vYSZviVYUb_rj3ij__anPXJzDwcbmjWBN2PKdFvXDTbtPY_Q.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 @font-face {
@@ -39,36 +40,36 @@
 
 @font-face {
   font-family: 'Stolzl Book';
-  src: url('../fonts/Stolzl/Stolzl-Book.eot');
+  src: url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Book.eot);
   src: local('Stolzl Book'), local('Stolzl-Book'),
-    url('../fonts/Stolzl/Stolzl-Book.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Book.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Book.woff') format('woff'),
-    url('../fonts/Stolzl/Stolzl-Book.ttf') format('truetype');
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Book.eot?#iefix) format('embedded-opentype'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Book.woff2) format('woff2'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Book.woff) format('woff'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Book.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Stolzl Regular';
-  src: url('../fonts/Stolzl/Stolzl-Regular.eot');
+  src: url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Regular.eot);
   src: local('Stolzl Regular'), local('Stolzl-Regular'),
-    url('../fonts/Stolzl/Stolzl-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Regular.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Regular.woff') format('woff'),
-    url('../fonts/Stolzl/Stolzl-Regular.ttf') format('truetype');
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Regular.eot?#iefix) format('embedded-opentype'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Regular.woff2) format('woff2'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Regular.woff) format('woff'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Regular.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Stolzl Bold';
-  src: url('../fonts/Stolzl/Stolzl-Bold.eot');
+  src: url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Bold.eot);
   src: local('Stolzl Bold'), local('Stolzl-Bold'),
-    url('../fonts/Stolzl/Stolzl-Bold.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Stolzl/Stolzl-Bold.woff2') format('woff2'),
-    url('../fonts/Stolzl/Stolzl-Bold.woff') format('woff'),
-    url('../fonts/Stolzl/Stolzl-Bold.ttf') format('truetype');
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Bold.eot?#iefix) format('embedded-opentype'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Bold.woff2) format('woff2'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Bold.woff) format('woff'),
+    url(https://alfa-zet.com/wp-content/uploads/2024/08/Stolzl-Bold.ttf) format('truetype');
   font-weight: bold;
   font-style: normal;
 }
